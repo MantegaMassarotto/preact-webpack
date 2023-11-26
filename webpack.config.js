@@ -18,8 +18,20 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: ['.ts', '.tsx', '.js', '.jsx'],
+    extensions: [
+      '.web.js',
+      '.js',
+      '.web.ts',
+      '.ts',
+      '.web.jsx',
+      '.jsx',
+      '.web.tsx',
+      '.tsx',
+      '.json',
+    ],
     alias: {
+      'react-native$': 'react-native-web',
+      'react-native-svg': 'react-native-svg-web',
       react: 'preact/compat',
       'react-dom/test-utils': 'preact/test-utils',
       'react-dom': 'preact/compat', // Must be below test-utils
