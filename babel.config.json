@@ -1,0 +1,17 @@
+{
+  "presets": [
+    [
+      "@babel/preset-react",
+      {
+        "development": true,
+        "useBuiltIns": "entry"
+      }
+    ],
+    "@babel/preset-typescript"
+  ],
+  "plugins": [
+    "@babel/plugin-syntax-dynamic-import",
+    "@babel/plugin-proposal-export-namespace-from",
+    "react-native-reanimated/plugin"
+  ]
+}
